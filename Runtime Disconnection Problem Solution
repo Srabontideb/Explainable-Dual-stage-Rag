@@ -1,0 +1,7 @@
+For Colab runtime disconnection problem:
+
+function ConnectButton(){
+    console.log("connect pushed");
+    document.querySelector("#top-toolbar > colab-connect-button").shadowRoot.querySelector("#connect").click()
+}
+var colab = setInterval(ConnectButton,6000);
